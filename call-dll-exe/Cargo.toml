@@ -1,0 +1,29 @@
+[package]
+name = "call-dll-exe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[dependencies.tokio]
+version = "1"
+features = [
+    "rt",
+    "rt-multi-thread",
+    "macros",
+    "net",
+    "time",
+]
+
+[dependencies.windows]
+version = "0.*"
+features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Gdi",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Threading",
+]

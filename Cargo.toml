@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "hook-dll",
+    "call-dll-exe",
+]
