@@ -120,6 +120,7 @@ fn write_main_console(line: &str) {
         None,
         None
     ) };
+    _ = unsafe { CloseHandle(hpipe) };
 }
 
 fn attach(dll_module: HINSTANCE) {
